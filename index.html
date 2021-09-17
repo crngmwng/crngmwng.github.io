@@ -3,18 +3,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Ссылки</title>
+    <title>Задание 1</title>
 </head>
 <body>
     <ul>
-        <li> <a href="http://example.com" id="ancor">абсолютная гиперссылка на главную страницу сайта example.com;</a></li>
-        <li> <a href="https://example.com">абсолютная на главную сайта example.com в протоколе https;</a></li>
+        <li> <a href="http://example.com" id="ancor">example.com;</a></li>
+        <li> <a href="https://example.com"> example.com в протоколе https;</a></li>
         <li> <a href="ftp://user001:secretpassword@private.ftp-servers.example.com/mydirectory/myfile.txt"> ссылка на файл на сервере FTP без авторизации; </a></li>
         <li> <a href="ftp://private.ftp-servers.example.com/mydirectory/myfile.txt"> ссылка на файл на сервере FTP с авторизацией; </a></li>
         <li> <a href="https://en.wikipedia.org/wiki/Setagaya_Art_Museum#Structure">ссылка на фрагмент страницы некоторого сайта; </a></li>
         <li><a href="#ancor">ссылка на фрагмент текущей страницы;</a></li>
         <li><a href="https://example.com/products/women?category=dresses&color=green">ссылкa с двумя параметрами в URL</a></li>
         <li>
+            Список ссылок основной навигации сайта с подписями title
             <ul>
                 <li><a href="https://www.kubsu.ru/ru/university" title="Университет">Университет</a></li>
                 <li><a href="https://www.kubsu.ru/ru/education" title="Образование">Образование</a></li>
@@ -39,9 +40,88 @@
         <li><a href="/about/a">относительная на страницу в каталоге about</a></li>
         <li><a href="../page.html"> относительная на страницу в каталоге уровнем выше текущего</a></li>
         <li><a href="../../page.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
-        <li><a href="/">КубГУ</a></li>
 
     </ul>
+
+    <form action="/"
+          method="POST>
+        <label>
+            Имя:<br />
+            <input name="field-name-1"
+                   value="начальное значение" />
+        </label><br />
+
+        <label>
+            email:<br />
+            <input name="field-email"
+                   value="test@example.com"
+                   type="email" />
+        </label><br />
+
+        <label>
+            Дата:<br />
+            <input name="field-date"
+                   value="2019-08-13"
+                   type="date" />
+        </label><br />
+
+        Пол:
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение1" />
+            Муж
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение2" />
+            Жен
+        </label><br />
+
+        Количество конечностей: <br />
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-2" value="Значение1" />
+            1
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение2" />
+            2
+        </label>
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-2" value="Значение1" />
+            3
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение2" />
+            4
+        </label><br />
+
+        <label>
+            Сверхспособности:
+            <br />
+            <select name="field-name-4[]"
+                    multiple="multiple">
+                <option value="Значение1">Бессмертие</option>
+                <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+                <option value="Значение3" selected="selected">Левитация</option>
+            </select>
+        </label><br />
+
+        <label>
+           Биография:<br />
+            <textarea name="field-name-2">Напишите что-нибудь</textarea>
+        </label><br />
+
+        <label><input type="checkbox" checked="checked" name="check-1" />
+            С контрактом ознакомлен
+        </label><br />
+
+         <input type="submit" value="Отправить" />
+
+    </form>
 
 </body>
 </html>
