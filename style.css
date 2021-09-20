@@ -1,25 +1,41 @@
-﻿body {
-    color: red;
+﻿﻿body {
+   color: red;
 }
 
 header img {
     float: left;
     margin-right: 20px;
+    width:100px;
 }
 
-header {
+header, footer {
     background: #ccc;
 }
 
-#content, header div{
+#content, header div, footer p {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 10 auto;
 }
 
-header div {
-    vertical-align: central;
-}
 
-nav li{
+nav a {
     float: left;
+    margin-right:20px;
+}
+
+footer {
+    height: 40px;
+    line-height:40px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #f79c9c;
+}
+
+form{
+    margin-top:20px;
 }
