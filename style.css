@@ -14,6 +14,12 @@ header, footer {
     margin: 10 auto;
 }
 
+nav {
+    background-color: #dba3f5;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
 
 nav a {
     float: left;
@@ -25,6 +31,16 @@ footer {
     line-height:40px;
 }
 
+ul{
+    background-color: #f8d0d0;
+}
+
+.table{
+    background-color: #fadea5;
+    padding: 10px;
+}
+
+
 table, th, td{
     border: 1px solid black;
 }
@@ -35,4 +51,14 @@ tr:nth-child(even) {
 
 form{
     margin-top:20px;
+    background-color: #e5bbf8;
+    padding: 10px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+   nav {
+        flex-direction: row;
+    }
 }
