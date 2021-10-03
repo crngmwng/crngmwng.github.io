@@ -15,7 +15,7 @@ header, footer {
 
 #content, header div, footer p {
     max-width: 100%;
-    margin: 10 auto;
+    margin: 10px auto;
 }
 
 nav, ol, .table, form{
@@ -70,19 +70,26 @@ form{
        max-width: 960px;
    }
 
+
+    nav {
+        flex-direction: row;
+    }
+    
+}
+
+@media (max-width: 800px) {
     #content {
         display: flex;
         flex-direction: column;
     }
 
-    nav {
-        flex-direction: row;
+
+    .form{
+        order:1;
     }
 
-    .table {
-        order: 1;
+    .table{
+        order:2;
     }
-
-    
 }
 
