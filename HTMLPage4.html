@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style4.css" />
+    <title>дз4</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="image.jpg" alt="logo" width="100" height="90" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Ссылка 1</a>
+                        <a class="nav-link active" href="#">Ссылка 2</a>
+                        <a class="nav-link active" href="#">Ссылка 3</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 list order-1">
+                <ol>
+                    <li> <a href="http://example.com" id="ancor">example.com;</a></li>
+                    <li> <a href="https://example.com"> example.com в протоколе https;</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/Setagaya_Art_Museum#Structure">ссылка на фрагмент страницы некоторого сайта; </a></li>
+                    <li><a href="#ancor">ссылка на фрагмент текущей страницы;</a></li>
+                    <li><a href="https://example.com/products/women?category=dresses&color=green">ссылкa с двумя параметрами в URL</a></li>
+                </ol>
+            </div>
+
+            <div class="col-12 table order-3 order-sm-2">
+                <table class="table-striped">
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 11</td>
+                        <td>Ячейка 11</td>
+                        <td>Ячейка 13</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 31</td>
+                        <td colspan="2">Ячейка 32 объединенная с 33</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td>Ячейка 42</td>
+                        <td>Ячейка 43</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-12 form order-sm-3 order-2">
+                <form action="/"
+                      method="POST">
+                    <label>
+                        Имя:<br />
+                        <input name="field-name-1"
+                               value="начальное значение" />
+                    </label><br />
+
+                    <label>
+                        email:<br />
+                        <input name="field-email"
+                               value="test@example.com"
+                               type="email" />
+                    </label><br />
+
+                    <label>
+                        Дата рождения:<br />
+                        <input name="field-date"
+                               value="2019-08-13"
+                               type="date" />
+                    </label><br />
+
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+        
+        </div>
+    </div>
+        <footer>
+            <p>&#169; 2021</p>
+        </footer>
+
+</body>
+</html>
