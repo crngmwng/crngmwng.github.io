@@ -8,7 +8,7 @@ function click1() {
     let r = document.getElementById("result");
 
     let text = "ok";
-    if (isNaN(f1[0].value) || isNaN(f2[0].value)) {
+    if (Number.isNaN(f1[0].value) || Number.isNaN(f2[0].value)) {
         text = "only numbers can be entered";
     }
     document.getElementById("demo").innerHTML = text;
