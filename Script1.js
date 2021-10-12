@@ -1,0 +1,18 @@
+document.addEventListener("DOMContentLoaded", click1);
+
+function click1() {
+    let f1 = document.getElementsByName("price");
+    let f2 = document.getElementsByName("number");
+    let r = document.getElementById("result");
+
+    let text = "ok"
+    if (isNaN(f1[0].value) || isNaN(f2[0].value)) {
+        text = "only numbers can be entered";
+    }
+    document.getElementById("demo").innerHTML = text;
+ 
+
+    ans = parseFloat(f1[0].value) * parseFloat(f2[0].value);
+    r.innerHTML = "result: " + ans;
+    return false;
+}
