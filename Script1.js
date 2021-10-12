@@ -5,14 +5,13 @@ function click1() {
     let f2 = document.getElementsByName("number");
     let r = document.getElementById("result");
 
-    let text = "ok"
-    if (isNaN(f1[0].value) || isNaN(f2[0].value)) {
+    let text = "ok";
+    if (Number.isNaN(f1[0].value) || Number.isNaN(f2[0].value)) {
         text = "only numbers can be entered";
     }
     document.getElementById("demo").innerHTML = text;
  
-
-    ans = parseFloat(f1[0].value) * parseFloat(f2[0].value);
+    let ans = parseFloat(f1[0].value) * parseFloat(f2[0].value);
     r.innerHTML = "result: " + ans;
     return false;
 }
