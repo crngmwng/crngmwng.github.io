@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", click1);
+window.addEventListener('DOMContentLoaded', function (event) {
+    console.log("DOM fully loaded and parsed");
+});
 
 function click1() {
     let f1 = document.getElementsByName("price");
@@ -6,7 +8,7 @@ function click1() {
     let r = document.getElementById("result");
 
     let text = "ok";
-    if (Number.isNaN(f1[0].value) || Number.isNaN(f2[0].value)) {
+    if (isNaN(f1[0].value) || isNaN(f2[0].value)) {
         text = "only numbers can be entered";
     }
     document.getElementById("demo").innerHTML = text;
