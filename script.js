@@ -39,8 +39,10 @@ function updatePrice() {
     let result = document.getElementById("result");
 
     if (isNaN(num.value)) {
-        result.innerHTML ="only numbers";
-    } else result.innerHTML = num.value *price + " рублей";
+        result.innerHTML = "only numbers";
+    } else {
+        result.innerHTML = num.value * price + " рублей";
+    }
 }
 
 function getPrices() {
