@@ -7,7 +7,7 @@ function updatePrice() {
     let prices = getPrices();
     let priceIndex = parseInt(select.value) - 1;
     if (priceIndex >= 0) {
-        price = num.value*prices.prodTypes[priceIndex];
+        price = prices.prodTypes[priceIndex];
     }
 
     let radioDiv = document.getElementById("radios");
@@ -40,7 +40,7 @@ function updatePrice() {
 
     if (isNaN(num.value)) {
         result.innerHTML ="only numbers";
-    } else result.innerHTML = price + " рублей";
+    } else result.innerHTML = num.value *price + " рублей";
 }
 
 function getPrices() {
